@@ -28,6 +28,7 @@
 		BAA004412613460F00F3CCA3 /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043C2613460E00F3CCA3 /* SelectModel.swift */; };
 		BAA004422613460F00F3CCA3 /* GetQuizu&Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */; };
 		BAA004432613460F00F3CCA3 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */; };
+		BAA0044E2613486900F3CCA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA0044D2613486900F3CCA3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BAA0043C2613460E00F3CCA3 /* SelectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
 		BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GetQuizu&Answer.swift"; sourceTree = "<group>"; };
 		BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
+		BAA0044D2613486900F3CCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				BA0208182612A7FD009CC222 /* Controller */,
 				BA02080D26129FEC009CC222 /* LaunchScreen.storyboard */,
 				BA02081026129FEC009CC222 /* Info.plist */,
+				BAA0044D2613486900F3CCA3 /* GoogleService-Info.plist */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA02080F26129FEC009CC222 /* LaunchScreen.storyboard in Resources */,
+				BAA0044E2613486900F3CCA3 /* GoogleService-Info.plist in Resources */,
 				BA02080C26129FEC009CC222 /* Assets.xcassets in Resources */,
 				BAA003F726133FF000F3CCA3 /* Main.storyboard in Resources */,
 			);
