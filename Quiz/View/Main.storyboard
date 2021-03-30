@@ -68,7 +68,6 @@
         <!--Navigation Controller-->
         <scene sceneID="idb-Wy-8NW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aSe-77-bs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qxb-JQ-45c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSb-oF-eag">
@@ -80,13 +79,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dPM-BV-u0y"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSe-77-bs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="PqA-wq-3hn">
             <objects>
-                <viewController storyboardIdentifier="signUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZb-wK-QAZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZb-wK-QAZ" customClass="RegisterViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Up-0g-Tzh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="1791" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="Kzw-f9-wQl">
             <objects>
-                <viewController storyboardIdentifier="menuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zJh-bT-BcU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zJh-bT-BcU" customClass="MenuViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMu-DQ-rEN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="2618" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Regist Quizu View Controller-->
         <scene sceneID="EsZ-sf-dQN">
             <objects>
-                <viewController storyboardIdentifier="quizuRegistVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUr-Qu-1LE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quizuRegistVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUr-Qu-1LE" customClass="RegistQuizuViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F21-Du-2tc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="3492" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Quizu Menu View Controller-->
         <scene sceneID="gQY-MW-JaG">
             <objects>
-                <viewController storyboardIdentifier="quizuMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rLd-Jr-fTf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quizuMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rLd-Jr-fTf" customClass="QuizuMenuViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Th8-hm-EzX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -508,10 +508,10 @@
             </objects>
             <point key="canvasLocation" x="2617" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Quizu View Controller-->
         <scene sceneID="cQ9-Hd-c47">
             <objects>
-                <viewController storyboardIdentifier="quizu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kfa-79-uU7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quizu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kfa-79-uU7" customClass="QuizuViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h6p-dk-dWK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -663,10 +663,10 @@
             </objects>
             <point key="canvasLocation" x="3492" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Shuffle Quizu View Controller-->
         <scene sceneID="q51-jF-kdL">
             <objects>
-                <viewController storyboardIdentifier="shuffleQuizu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1tO-zM-4Dp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shuffleQuizu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1tO-zM-4Dp" customClass="ShuffleQuizuViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0q-E2-hUq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,10 +818,10 @@
             </objects>
             <point key="canvasLocation" x="4316" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="7Sa-Hz-NVW">
             <objects>
-                <viewController id="YAu-YM-Nji" sceneMemberID="viewController">
+                <viewController id="YAu-YM-Nji" customClass="ResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nzy-3V-nxs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -990,10 +990,10 @@
             </objects>
             <point key="canvasLocation" x="5204" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="uFp-yT-ku9">
             <objects>
-                <viewController storyboardIdentifier="setting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ZZ-xX-yE7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="setting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ZZ-xX-yE7" customClass="SettingViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gNM-tE-1z2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1101,10 +1101,10 @@
             </objects>
             <point key="canvasLocation" x="34" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Update View Controller-->
         <scene sceneID="qeI-eu-5te">
             <objects>
-                <viewController storyboardIdentifier="updateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rrj-id-4Pn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="updateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rrj-id-4Pn" customClass="UpdateViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ude-in-5B4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

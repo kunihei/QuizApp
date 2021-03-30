@@ -10,19 +10,24 @@
 		A1AEB28B2CE299DB7BB1A8BF /* Pods_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3838E390558458720E5BE2 /* Pods_Quiz.framework */; };
 		BA02080326129FEB009CC222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02080226129FEB009CC222 /* AppDelegate.swift */; };
 		BA02080526129FEB009CC222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02080426129FEB009CC222 /* SceneDelegate.swift */; };
-		BA02080726129FEB009CC222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02080626129FEB009CC222 /* ViewController.swift */; };
 		BA02080C26129FEC009CC222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA02080B26129FEC009CC222 /* Assets.xcassets */; };
 		BA02080F26129FEC009CC222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA02080D26129FEC009CC222 /* LaunchScreen.storyboard */; };
 		BAA003F726133FF000F3CCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA003F626133FF000F3CCA3 /* Main.storyboard */; };
-		BAA00403261340EB00F3CCA3 /* QuizuMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FA261340E900F3CCA3 /* QuizuMenuViewController.swift */; };
-		BAA00404261340EB00F3CCA3 /* QuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FB261340E900F3CCA3 /* QuizuViewController.swift */; };
-		BAA00405261340EB00F3CCA3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FC261340E900F3CCA3 /* SettingViewController.swift */; };
-		BAA00406261340EB00F3CCA3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FD261340E900F3CCA3 /* ResultViewController.swift */; };
-		BAA00407261340EB00F3CCA3 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FE261340EA00F3CCA3 /* UpdateViewController.swift */; };
-		BAA00408261340EB00F3CCA3 /* ShuffleQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA003FF261340EA00F3CCA3 /* ShuffleQuizuViewController.swift */; };
-		BAA00409261340EB00F3CCA3 /* RegistQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00400261340EA00F3CCA3 /* RegistQuizuViewController.swift */; };
-		BAA0040A261340EB00F3CCA3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00401261340EA00F3CCA3 /* MenuViewController.swift */; };
-		BAA0040B261340EB00F3CCA3 /* RegisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00402261340EB00F3CCA3 /* RegisteViewController.swift */; };
+		BAA0042F261345D500F3CCA3 /* QuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00425261345D500F3CCA3 /* QuizuViewController.swift */; };
+		BAA00430261345D500F3CCA3 /* ShuffleQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00426261345D500F3CCA3 /* ShuffleQuizuViewController.swift */; };
+		BAA00431261345D500F3CCA3 /* QuizuMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00427261345D500F3CCA3 /* QuizuMenuViewController.swift */; };
+		BAA00432261345D500F3CCA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00428261345D500F3CCA3 /* RegisterViewController.swift */; };
+		BAA00433261345D500F3CCA3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA00429261345D500F3CCA3 /* SettingViewController.swift */; };
+		BAA00434261345D500F3CCA3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0042A261345D500F3CCA3 /* ResultViewController.swift */; };
+		BAA00435261345D500F3CCA3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0042B261345D500F3CCA3 /* MenuViewController.swift */; };
+		BAA00436261345D500F3CCA3 /* RegistQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0042C261345D500F3CCA3 /* RegistQuizuViewController.swift */; };
+		BAA00437261345D500F3CCA3 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0042D261345D500F3CCA3 /* UpdateViewController.swift */; };
+		BAA00438261345D500F3CCA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0042E261345D500F3CCA3 /* ViewController.swift */; };
+		BAA0043F2613460F00F3CCA3 /* GetSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043A2613460E00F3CCA3 /* GetSelectPicker.swift */; };
+		BAA004402613460F00F3CCA3 /* QuizuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043B2613460E00F3CCA3 /* QuizuModel.swift */; };
+		BAA004412613460F00F3CCA3 /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043C2613460E00F3CCA3 /* SelectModel.swift */; };
+		BAA004422613460F00F3CCA3 /* GetQuizu&Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */; };
+		BAA004432613460F00F3CCA3 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,20 +37,25 @@
 		BA0207FF26129FEB009CC222 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA02080226129FEB009CC222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA02080426129FEB009CC222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA02080626129FEB009CC222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA02080B26129FEC009CC222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA02080E26129FEC009CC222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA02081026129FEC009CC222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA003F626133FF000F3CCA3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BAA003FA261340E900F3CCA3 /* QuizuMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizuMenuViewController.swift; sourceTree = "<group>"; };
-		BAA003FB261340E900F3CCA3 /* QuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizuViewController.swift; sourceTree = "<group>"; };
-		BAA003FC261340E900F3CCA3 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		BAA003FD261340E900F3CCA3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		BAA003FE261340EA00F3CCA3 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
-		BAA003FF261340EA00F3CCA3 /* ShuffleQuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuffleQuizuViewController.swift; sourceTree = "<group>"; };
-		BAA00400261340EA00F3CCA3 /* RegistQuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistQuizuViewController.swift; sourceTree = "<group>"; };
-		BAA00401261340EA00F3CCA3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		BAA00402261340EB00F3CCA3 /* RegisteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteViewController.swift; sourceTree = "<group>"; };
+		BAA00425261345D500F3CCA3 /* QuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizuViewController.swift; sourceTree = "<group>"; };
+		BAA00426261345D500F3CCA3 /* ShuffleQuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuffleQuizuViewController.swift; sourceTree = "<group>"; };
+		BAA00427261345D500F3CCA3 /* QuizuMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizuMenuViewController.swift; sourceTree = "<group>"; };
+		BAA00428261345D500F3CCA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BAA00429261345D500F3CCA3 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BAA0042A261345D500F3CCA3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		BAA0042B261345D500F3CCA3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BAA0042C261345D500F3CCA3 /* RegistQuizuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistQuizuViewController.swift; sourceTree = "<group>"; };
+		BAA0042D261345D500F3CCA3 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		BAA0042E261345D500F3CCA3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAA0043A2613460E00F3CCA3 /* GetSelectPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSelectPicker.swift; sourceTree = "<group>"; };
+		BAA0043B2613460E00F3CCA3 /* QuizuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizuModel.swift; sourceTree = "<group>"; };
+		BAA0043C2613460E00F3CCA3 /* SelectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
+		BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GetQuizu&Answer.swift"; sourceTree = "<group>"; };
+		BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +131,16 @@
 		BA0208182612A7FD009CC222 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA02080626129FEB009CC222 /* ViewController.swift */,
-				BAA00401261340EA00F3CCA3 /* MenuViewController.swift */,
-				BAA003FA261340E900F3CCA3 /* QuizuMenuViewController.swift */,
-				BAA003FB261340E900F3CCA3 /* QuizuViewController.swift */,
-				BAA00402261340EB00F3CCA3 /* RegisteViewController.swift */,
-				BAA00400261340EA00F3CCA3 /* RegistQuizuViewController.swift */,
-				BAA003FD261340E900F3CCA3 /* ResultViewController.swift */,
-				BAA003FC261340E900F3CCA3 /* SettingViewController.swift */,
-				BAA003FF261340EA00F3CCA3 /* ShuffleQuizuViewController.swift */,
-				BAA003FE261340EA00F3CCA3 /* UpdateViewController.swift */,
+				BAA0042B261345D500F3CCA3 /* MenuViewController.swift */,
+				BAA00427261345D500F3CCA3 /* QuizuMenuViewController.swift */,
+				BAA00425261345D500F3CCA3 /* QuizuViewController.swift */,
+				BAA00428261345D500F3CCA3 /* RegisterViewController.swift */,
+				BAA0042C261345D500F3CCA3 /* RegistQuizuViewController.swift */,
+				BAA0042A261345D500F3CCA3 /* ResultViewController.swift */,
+				BAA00429261345D500F3CCA3 /* SettingViewController.swift */,
+				BAA00426261345D500F3CCA3 /* ShuffleQuizuViewController.swift */,
+				BAA0042D261345D500F3CCA3 /* UpdateViewController.swift */,
+				BAA0042E261345D500F3CCA3 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +148,11 @@
 		BA02081A2612A80D009CC222 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */,
+				BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */,
+				BAA0043A2613460E00F3CCA3 /* GetSelectPicker.swift */,
+				BAA0043B2613460E00F3CCA3 /* QuizuModel.swift */,
+				BAA0043C2613460E00F3CCA3 /* SelectModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,18 +271,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA00408261340EB00F3CCA3 /* ShuffleQuizuViewController.swift in Sources */,
-				BA02080726129FEB009CC222 /* ViewController.swift in Sources */,
-				BAA00404261340EB00F3CCA3 /* QuizuViewController.swift in Sources */,
-				BAA00406261340EB00F3CCA3 /* ResultViewController.swift in Sources */,
-				BAA0040B261340EB00F3CCA3 /* RegisteViewController.swift in Sources */,
-				BAA0040A261340EB00F3CCA3 /* MenuViewController.swift in Sources */,
+				BAA004402613460F00F3CCA3 /* QuizuModel.swift in Sources */,
+				BAA00437261345D500F3CCA3 /* UpdateViewController.swift in Sources */,
+				BAA00431261345D500F3CCA3 /* QuizuMenuViewController.swift in Sources */,
 				BA02080326129FEB009CC222 /* AppDelegate.swift in Sources */,
-				BAA00409261340EB00F3CCA3 /* RegistQuizuViewController.swift in Sources */,
-				BAA00403261340EB00F3CCA3 /* QuizuMenuViewController.swift in Sources */,
+				BAA004422613460F00F3CCA3 /* GetQuizu&Answer.swift in Sources */,
 				BA02080526129FEB009CC222 /* SceneDelegate.swift in Sources */,
-				BAA00405261340EB00F3CCA3 /* SettingViewController.swift in Sources */,
-				BAA00407261340EB00F3CCA3 /* UpdateViewController.swift in Sources */,
+				BAA004432613460F00F3CCA3 /* ChangeColor.swift in Sources */,
+				BAA00434261345D500F3CCA3 /* ResultViewController.swift in Sources */,
+				BAA00435261345D500F3CCA3 /* MenuViewController.swift in Sources */,
+				BAA00438261345D500F3CCA3 /* ViewController.swift in Sources */,
+				BAA00436261345D500F3CCA3 /* RegistQuizuViewController.swift in Sources */,
+				BAA00432261345D500F3CCA3 /* RegisterViewController.swift in Sources */,
+				BAA0043F2613460F00F3CCA3 /* GetSelectPicker.swift in Sources */,
+				BAA004412613460F00F3CCA3 /* SelectModel.swift in Sources */,
+				BAA00430261345D500F3CCA3 /* ShuffleQuizuViewController.swift in Sources */,
+				BAA00433261345D500F3CCA3 /* SettingViewController.swift in Sources */,
+				BAA0042F261345D500F3CCA3 /* QuizuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
