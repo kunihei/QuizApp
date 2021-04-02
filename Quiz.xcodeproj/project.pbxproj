@@ -29,6 +29,7 @@
 		BAA004422613460F00F3CCA3 /* GetQuizu&Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */; };
 		BAA004432613460F00F3CCA3 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */; };
 		BAA0044E2613486900F3CCA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA0044D2613486900F3CCA3 /* GoogleService-Info.plist */; };
+		BACE71032615FA4D006215DB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACE71022615FA4D006215DB /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		BAA0043D2613460E00F3CCA3 /* GetQuizu&Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GetQuizu&Answer.swift"; sourceTree = "<group>"; };
 		BAA0043E2613460F00F3CCA3 /* ChangeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 		BAA0044D2613486900F3CCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BACE71022615FA4D006215DB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				BAA00426261345D500F3CCA3 /* ShuffleQuizuViewController.swift */,
 				BAA0042D261345D500F3CCA3 /* UpdateViewController.swift */,
 				BAA0042E261345D500F3CCA3 /* ViewController.swift */,
+				BACE71022615FA4D006215DB /* SignInViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				BAA00432261345D500F3CCA3 /* RegisterViewController.swift in Sources */,
 				BAA0043F2613460F00F3CCA3 /* GetSelectPicker.swift in Sources */,
 				BAA004412613460F00F3CCA3 /* SelectModel.swift in Sources */,
+				BACE71032615FA4D006215DB /* SignInViewController.swift in Sources */,
 				BAA00430261345D500F3CCA3 /* ShuffleQuizuViewController.swift in Sources */,
 				BAA00433261345D500F3CCA3 /* SettingViewController.swift in Sources */,
 				BAA0042F261345D500F3CCA3 /* QuizuViewController.swift in Sources */,

@@ -42,7 +42,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fZb-wK-QAZ" kind="show" id="Tvq-HI-0Et"/>
+                                    <segue destination="TgH-sN-wTr" kind="show" id="iXW-1C-7RF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="93.842364532019715"/>
+            <point key="canvasLocation" x="942" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="idb-Wy-8NW">
@@ -83,7 +83,104 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSe-77-bs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="33" y="94"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="wMC-s8-xsy">
+            <objects>
+                <viewController id="TgH-sN-wTr" customClass="SignInViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6rF-Au-gew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-d5-hd9">
+                                <rect key="frame" x="57" y="215" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnZ-Bi-1NP">
+                                <rect key="frame" x="57" y="282" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypf-k0-vcb">
+                                <rect key="frame" x="0.0" y="88" width="375" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="iEh-PU-cWN"/>
+                                    <constraint firstAttribute="width" constant="375" id="ttQ-M7-AOv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gY-oz-JWj">
+                                <rect key="frame" x="57" y="357" width="261" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77897307690518836" green="1" blue="0.80520186281335393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="TgH-sN-wTr" eventType="touchUpInside" id="Kvn-Tb-w6o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvT-1v-BOw">
+                                <rect key="frame" x="148" y="419" width="79" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plU-Hp-UTP">
+                                <rect key="frame" x="57" y="625" width="261" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="新規登録はこちら">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fZb-wK-QAZ" kind="show" id="yHl-zz-CfS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-OC-Cgf">
+                                <rect key="frame" x="57" y="459" width="261" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0022613033824027129" green="0.62529507392693162" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Twitterログイン">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterLogin:" destination="TgH-sN-wTr" eventType="touchUpInside" id="oyO-M4-Zk6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ns-5Z-IGd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypf-k0-vcb" firstAttribute="leading" secondItem="4ns-5Z-IGd" secondAttribute="leading" id="6db-cM-hrM"/>
+                            <constraint firstItem="ypf-k0-vcb" firstAttribute="top" secondItem="6rF-Au-gew" secondAttribute="top" constant="88" id="7HP-fx-EZ7"/>
+                            <constraint firstItem="ypf-k0-vcb" firstAttribute="trailing" secondItem="4ns-5Z-IGd" secondAttribute="trailing" id="yat-hV-MIl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yQF-ge-53Y"/>
+                    <connections>
+                        <outlet property="passTextField" destination="FnZ-Bi-1NP" id="ZoL-xv-9Lb"/>
+                        <outlet property="userTextFiled" destination="Hip-d5-hd9" id="IZN-uP-RNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15h-xR-fx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.5999999999999" y="93.842364532019715"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="PqA-wq-3hn">
@@ -120,7 +217,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-fr-bYh">
-                                <rect key="frame" x="47" y="298" width="280" height="34"/>
+                                <rect key="frame" x="47" y="216" width="280" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="K4V-PM-ShG"/>
                                     <constraint firstAttribute="height" constant="34" id="Yhq-Ng-biH"/>
@@ -128,6 +225,27 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="確認用パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95w-p8-9vn">
+                                <rect key="frame" x="47" y="389" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="確認用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1T-ir-nbh">
+                                <rect key="frame" x="47" y="357" width="84" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5R-mF-dUI">
+                                <rect key="frame" x="47" y="298" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r8s-bE-9dI"/>
@@ -138,7 +256,7 @@
                             <constraint firstItem="2gJ-cL-j22" firstAttribute="top" secondItem="0Up-0g-Tzh" secondAttribute="top" constant="88" id="O4k-Ph-6oY"/>
                             <constraint firstItem="2gJ-cL-j22" firstAttribute="trailing" secondItem="r8s-bE-9dI" secondAttribute="trailing" id="P8g-B5-DcX"/>
                             <constraint firstItem="98n-fe-Anm" firstAttribute="leading" secondItem="r8s-bE-9dI" secondAttribute="leading" constant="16" id="UZE-q7-j9T"/>
-                            <constraint firstItem="ELw-fr-bYh" firstAttribute="top" secondItem="2gJ-cL-j22" secondAttribute="bottom" constant="127" id="ckg-Ne-LMh"/>
+                            <constraint firstItem="ELw-fr-bYh" firstAttribute="top" secondItem="2gJ-cL-j22" secondAttribute="bottom" constant="45" id="ckg-Ne-LMh"/>
                             <constraint firstItem="r8s-bE-9dI" firstAttribute="trailing" secondItem="ELw-fr-bYh" secondAttribute="trailing" constant="48" id="pO0-kd-Bb0"/>
                             <constraint firstItem="2gJ-cL-j22" firstAttribute="leading" secondItem="r8s-bE-9dI" secondAttribute="leading" id="ycN-MM-2yP"/>
                             <constraint firstItem="ELw-fr-bYh" firstAttribute="leading" secondItem="r8s-bE-9dI" secondAttribute="leading" constant="47" id="yhj-Pu-XHx"/>
@@ -146,13 +264,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="RPa-8W-VHg"/>
                     <connections>
+                        <outlet property="passwordTextField" destination="U5R-mF-dUI" id="ZMF-LY-GkG"/>
                         <outlet property="textField" destination="ELw-fr-bYh" id="j2X-Lu-1Zv"/>
+                        <outlet property="verificationTextField" destination="95w-p8-9vn" id="9m1-zN-Zgk"/>
                         <segue destination="zJh-bT-BcU" kind="show" id="In5-1F-KgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvG-sy-ctU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="94"/>
+            <point key="canvasLocation" x="2617" y="94"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Kzw-f9-wQl">
@@ -261,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBQ-b5-xFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2618" y="94"/>
+            <point key="canvasLocation" x="3492" y="94"/>
         </scene>
         <!--Regist Quizu View Controller-->
         <scene sceneID="EsZ-sf-dQN">
@@ -425,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPl-ob-cva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3492" y="94"/>
+            <point key="canvasLocation" x="4316" y="94"/>
         </scene>
         <!--Quizu Menu View Controller-->
         <scene sceneID="gQY-MW-JaG">

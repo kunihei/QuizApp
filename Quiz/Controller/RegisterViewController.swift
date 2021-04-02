@@ -7,11 +7,15 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 import EMAlertController
 
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var verificationTextField: UITextField!
     
     var changeColor = ChangeColor()
     var gradientLayer = CAGradientLayer()
@@ -42,7 +46,8 @@ class RegisterViewController: UIViewController {
             }
             
             let user = result?.user
-            print(user.debugDescription)
+            
+            Firestore.firestore().collection("userAdmin").document().setData(["userName": self.textField.text as Any, "password": self.passwordTextField.text as Any])
             UserDefaults.standard.setValue(self.textField.text, forKey: "userName")
             let menuVC = self.storyboard?.instantiateViewController(identifier: "menuVC") as! MenuViewController
             self.navigationController?.pushViewController(menuVC, animated: true)
@@ -51,7 +56,16 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func done(_ sender: Any) {
-        if textField.text?.isEmpty != true{
+        if passwordTextField.text != verificationTextField.text{
+            let alert = EMAlertController(title: "エラー", message: "パスワードが一致していません！")
+            let doneAction = EMAlertAction(title: "OK", style: .normal)
+            alert.addAction(doneAction)
+            present(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if textField.text?.isEmpty != true && passwordTextField.text?.isEmpty != true && verificationTextField.text?.isEmpty != nil{
             login()
         }else{
             let alert = EMAlertController(title: "エラー", message: "名前を入力して下さい！")
