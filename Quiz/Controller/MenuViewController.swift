@@ -69,8 +69,8 @@ class MenuViewController: UIViewController {
         do {
             try firebaseAuth.signOut()
             UserDefaults.standard.removeObject(forKey: "userName")
-            let signupVC = self.storyboard?.instantiateViewController(identifier: "signUpVC") as! RegisterViewController
-            self.navigationController?.pushViewController(signupVC, animated: true)
+            let loginVC = self.storyboard?.instantiateViewController(identifier: "loginVC") as! SignInViewController
+            self.navigationController?.pushViewController(loginVC, animated: true)
         } catch let error as NSError {
             print("エラー", error)
         }

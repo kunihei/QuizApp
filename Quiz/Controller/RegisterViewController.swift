@@ -11,7 +11,7 @@ import Firebase
 import FirebaseFirestore
 import EMAlertController
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -22,6 +22,10 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.delegate = self
+        passwordTextField.delegate = self
+        verificationTextField.delegate = self
         
         //バックの色を決めている
         gradientLayer = changeColor.changeColor(topR: 0.30, topG: 0.40, topB: 0.90, topAlpha: 1.0, bottomR: 0.80, bottomG: 0.60, bottomB: 0.20, bottomAlpha: 1.0)
@@ -39,20 +43,39 @@ class RegisterViewController: UIViewController {
     
     func login(){
         
-        Auth.auth().signInAnonymously { (result, error) in
-            if error != nil{
-                print(error.debugDescription)
-                return
+        //２つのフォームが入力されてる場合
+        if textField.text != "" && passwordTextField.text != "" {
+            //入力したパスワードが7文字以上の場合
+            if (passwordTextField.text?.count)! > 6  {
+                //会員登録開始
+                Auth.auth().createUser(withEmail: textField.text!, password: passwordTextField.text!) { (user, error) in
+                    //ログイン成功
+                    if error == nil {
+                        UserDefaults.standard.setValue(self.textField.text, forKey: "userName")
+                        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "menuVC") as! MenuViewController
+                        self.navigationController?.pushViewController(menuVC, animated: true)
+                        self.textField.text = ""
+                        self.passwordTextField.text = ""
+                        self.verificationTextField.text = ""
+                    }else{
+                        //ログイン失敗
+                        self.alert(title: "エラー", message: "ログイン失敗", actiontitle: "OK")
+                        return
+                    }
+                }
+                //入力したパスワードが6文字以下の場合
+            } else {
+                self.alert(title: "エラー", message: "7文字以上のパスワードを入力してください。", actiontitle: "OK")
             }
-            
-            let user = result?.user
-            
-            Firestore.firestore().collection("userAdmin").document().setData(["userName": self.textField.text as Any, "password": self.passwordTextField.text as Any])
-            UserDefaults.standard.setValue(self.textField.text, forKey: "userName")
-            let menuVC = self.storyboard?.instantiateViewController(identifier: "menuVC") as! MenuViewController
-            self.navigationController?.pushViewController(menuVC, animated: true)
         }
         
+    }
+    
+    //アラート
+    func alert(title:String,message:String,actiontitle:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: actiontitle, style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func done(_ sender: Any) {
@@ -76,7 +99,21 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        
     }
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        verificationTextField.resignFirstResponder()
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
