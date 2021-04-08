@@ -13,6 +13,9 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     
+    var changeColor = ChangeColor()
+    var gradientLayer = CAGradientLayer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,18 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
         mailTextField.delegate = self
         passTextField.delegate = self
         
+        //バックの色を決めている
+        gradientLayer = changeColor.changeColor(topR: 0.55, topG: 0.60, topB: 0.90, topAlpha: 1.0, bottomR: 0.63, bottomG: 0.46, bottomB: 0.60, bottomAlpha: 1.0)
+        gradientLayer.frame = view.bounds
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     @IBAction func login(_ sender: Any) {
@@ -48,7 +62,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
         
         let remindPasswordAlert = UIAlertController(title: "パスワードをリセット", message: "メールアドレスを入力してください", preferredStyle: .alert)
         remindPasswordAlert.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
-        remindPasswordAlert.addAction(UIAlertAction(title: "リセット", style: .default, handler: { (action) in
+        remindPasswordAlert.addAction(UIAlertAction(title: "送信", style: .default, handler: { (action) in
             let resetEmail = remindPasswordAlert.textFields?.first?.text
             Auth.auth().sendPasswordReset(withEmail: resetEmail!, completion: { (error) in
                 DispatchQueue.main.async {
