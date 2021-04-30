@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qxb-JQ-45c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qxb-JQ-45c">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -88,7 +88,6 @@
         <!--Sign In View Controller-->
         <scene sceneID="wMC-s8-xsy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="15h-xR-fx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TgH-sN-wTr" customClass="SignInViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rF-Au-gew">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -178,6 +177,7 @@
                         <outlet property="passTextField" destination="FnZ-Bi-1NP" id="ZoL-xv-9Lb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15h-xR-fx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1765.5999999999999" y="93.842364532019715"/>
         </scene>
@@ -658,7 +658,7 @@
                                     <constraint firstAttribute="height" constant="68" id="kfl-Wt-Qa6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-Ob-ktJ">
@@ -668,7 +668,7 @@
                                     <constraint firstAttribute="height" constant="153" id="m0l-Ro-f0i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaW-AO-iCM">
@@ -792,6 +792,7 @@
                         <outlet property="questionLabel" destination="PaW-AO-iCM" id="gXF-3f-XIG"/>
                         <outlet property="resultBtn" destination="GJu-Lk-rBA" id="5RU-xK-v0F"/>
                         <outlet property="textView" destination="ity-XF-ljR" id="4tg-jt-XIg"/>
+                        <segue destination="YAu-YM-Nji" kind="presentation" identifier="result" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="eGI-FY-g5t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcp-IU-mG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -813,7 +814,7 @@
                                     <constraint firstAttribute="height" constant="68" id="jlg-Vv-klG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="i5e-qg-U7K">
@@ -823,7 +824,7 @@
                                     <constraint firstAttribute="width" constant="343" id="uLD-Gx-K5f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc7-b4-Zza">
@@ -947,6 +948,7 @@
                         <outlet property="questionLabel" destination="gc7-b4-Zza" id="czg-pG-tid"/>
                         <outlet property="resultBtn" destination="eZ6-ts-Bw2" id="6KT-VO-V9C"/>
                         <outlet property="textView" destination="QlN-9D-uG9" id="SnZ-kS-46E"/>
+                        <segue destination="YAu-YM-Nji" kind="presentation" identifier="result" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="mKt-8h-2ml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zld-qA-0YF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1188,7 +1190,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="76" id="hHX-eH-WjL">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hHX-eH-WjL" id="BtX-NQ-ZNX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
@@ -1404,6 +1406,9 @@
             <point key="canvasLocation" x="942" y="839"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eGI-FY-g5t"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chopper" width="992" height="992"/>
         <image name="背景" width="4032" height="3024"/>

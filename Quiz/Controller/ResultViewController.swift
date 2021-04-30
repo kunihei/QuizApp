@@ -51,7 +51,7 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func reset(_ sender: Any) {
